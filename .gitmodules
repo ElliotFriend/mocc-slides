@@ -1,6 +1,6 @@
 [submodule "js/impress.js"]
 	path = js/impress.js
-	url = git@github.com:bartaz/impress.js.git
+	url = https://github.com/bartaz/impress.js.git
 [submodule "js/reveal.js"]
 	path = js/reveal.js
-	url = git@github.com:hakimel/reveal.js.git
+	url = https://github.com/hakimel/reveal.js.git
