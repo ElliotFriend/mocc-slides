@@ -50,6 +50,13 @@ table {
 body {
 	font-family: 'PT Sans', sans-serif;
     min-height: 740px;
+    background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
 }
 
 /* General step style */
@@ -71,20 +78,32 @@ body {
 }
 
 /* Text styles */
+b, strong { font-weight: bold }
+i, em { font-style: italic }
 .pull-left {
     float: left;
 }
 .pull-right {
     float: right;
 }
-#step-2 .pull-right {
+#proposition .pull-right {
     text-align: right;
 }
 #title h1 {
-    font-size: 81px;
+    font-weight: bold;
+    font-size: 78px;
 }
 #title strong {
     font-size: 75px;
+}
+
+/* Social stuff */
+#social {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 36px;
+    color: rgb(85, 172, 238);
 }
 
 /* fallback message */

@@ -21,17 +21,26 @@
 
         <div id="impress">
             <div id="title" class="step" data-x="0" data-y="0">
+                <span class="pull-left">David &amp; <strong>Goliath</strong></span>
+                <span class="pull-right">1 Samuel 17</span>
                 <h1>FORWARD with FAITH</h1>
-                <div>David &amp; <strong>Goliath</strong></div>
-                <div>1 Samuel 17</div>
             </div>
 
-            <div class="step" data-x="20" data-y="20" data-z="1000">
+            <div id="video-step" class="step" data-x="1000" data-y="100" data-rotate="90">
+                <!--<video id="emmets-mind" src="emmets-mind.mp4" type="video/webm" />-->
+                <p>Video here!</p>
+            </div>
+
+            <div id="proposition" class="step" data-x="20" data-y="170" data-z="1000">
                 <span class="pull-left">Moving</span><span class="pull-right">means that we trust God and we allow him to use us.</span>
             </div>
 
             <div id="overview" class="step" data-x="0" data-y="0" data-scale="4">
             </div>
+        </div>
+        <div id="social" style="position: fixed; bottom: 10px; left: 10px; pointer-events: auto;">
+            <span class="pull-left">@ElliotFriend</span>
+            <span class="pull-right">#mccteens</span>
         </div>
 
     <!--<div class="hint">
@@ -44,6 +53,16 @@
         </script>-->
 
         <script src="/js/impress.js/js/impress.js"></script>
-        <script>impress().init();</script>
+        <script>
+            impress().init();
+            var videoStep = document.getElementById("video-step");
+            var video = document.getElementById("emmets-mind");
+            videoStep.addEventListener("impress:stepenter", function() {
+                video.play();
+            }, false);
+            videoStep.addEventListener("impress:stepleave", function() {
+                video.pause();
+            }, false);
+        </script>
     </body>
 </html>
