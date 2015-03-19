@@ -102,7 +102,7 @@ body {
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
 }
-.coffee {
+.dew {
     margin: 0 auto;
     height: 0;
     width: 140px;
@@ -110,7 +110,7 @@ body {
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
 }
-.coffee-cups p {
+.dew-cups p {
     position: fixed;
     color: rgb(255, 255, 255);
 
