@@ -98,7 +98,7 @@ body {
     margin: 0 auto;
     height: 0;
     width: 290px;
-    border-top: 50px solid rgb(255, 255, 255);
+    border-top: 50px solid rgba(111, 230, 58, 0.3);
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
 }
@@ -106,7 +106,7 @@ body {
     margin: 0 auto;
     height: 0;
     width: 140px;
-    border-top: 300px solid rgb(117, 86, 56);
+    border-top: 300px solid rgb(111, 230, 58);
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
 }
