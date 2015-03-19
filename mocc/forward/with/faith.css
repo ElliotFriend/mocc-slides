@@ -95,11 +95,42 @@ body {
     opacity: 1;
 }
 .cup {
+    margin: 0 auto;
+    height: 0;
+    width: 290px;
+    border-top: 50px solid rgb(255, 255, 255);
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+}
+.coffee {
+    margin: 0 auto;
     height: 0;
     width: 140px;
-    border-top: 300px solid #bc6;
+    border-top: 300px solid rgb(117, 86, 56);
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
+}
+.coffee-cups p {
+    position: fixed;
+    color: rgb(255, 255, 255);
+
+    -webkit-transform: rotate(-75.964deg);
+    -moz-transform:    rotate(-75.964deg);
+    -ms-transform:     rotate(-75.964deg);
+    -o-transform:      rotate(-75.964deg);
+    transform:         rotate(-75.964deg);
+}
+#small-things p {
+    bottom: 69px;
+    left: 50%;
+}
+#medium-things p {
+    bottom: 103px;
+    left: 47%;
+}
+#large-things p {
+    bottom: 83px;
+    left: 49%;
 }
 
 /* Text styles */
