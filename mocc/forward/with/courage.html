@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Forward with Courage | Joshua | MO Christian Convention</title>
+        
+        <meta name="description" content="Moving forward with courage means we don’t stop leaning on God to get things done." />
+        <meta name="author" content="Elliot J. Voris" />
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link href="courage.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="fallback-message">
+            <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b>, or <b>Firefox</b> browser.</p>
+        </div>
+
+        <div id="impress">
+            <!-- Title Slide -->
+            <div id="title" class="step" data-x="0" data-y="0">
+                <span class="pull-left">Joshua</span>
+                <span class="pull-right">Joshua 1</span>
+                <div class="clearfix"><h1>FORWARD with COURAGE</h1></div>
+            </div>
+
+            <!-- Proposition slide (main point of the sermon) -->
+            <div id="proposition" class="step" data-x="20" data-y="165" data-z="1000">
+                <span class="pull-left">Moving</span><span class="pull-right">that we don’t stop leaning on God to get things done.</span>
+            </div>
+
+            <!-- Overview slide -->
+            <div id="overview" class="step" data-x="-350" data-y="300" data-scale="4">
+            </div>
+        </div>
+        <div id="social" style="position: fixed; bottom: 10px; left: 10px; pointer-events: auto;">
+            <span class="pull-left">@ElliotFriend</span>
+            <span class="pull-right">#moccteens</span>
+        </div>
+
+        <script src="/js/impress.js/js/impress.js"></script>
+        <script>
+            impress().init();
+            var videoStep = document.getElementById("video-step");
+            var video = document.getElementById("emmets-mind");
+            videoStep.addEventListener("impress:stepenter", function() {
+                video.play();
+            }, false);
+            videoStep.addEventListener("impress:stepleave", function() {
+                video.pause();
+            }, false);
+        </script>
+    </body>
+</html>
