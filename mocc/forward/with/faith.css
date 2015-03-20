@@ -48,15 +48,15 @@ table {
 }
 
 body {
-	font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     min-height: 740px;
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: rgb(80, 80, 80);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(40, 40, 40), rgb(120, 120, 120)));
+    background: -webkit-radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
+    background:    -moz-radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
+    background:     -ms-radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
+    background:      -o-radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
+    background:         radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
 }
 
 .clearfix {
@@ -65,6 +65,7 @@ body {
 
 /* General step style */
 .step {
+    color: rgb(240, 240, 240);
     position: relative;
     width: 900px;
     padding: 40px;
@@ -153,6 +154,9 @@ h1 {
 h2 {
     font-weight: bold;
     font-size: 125px;
+}
+video {
+    margin-left: -190px;
 }
 /* Social stuff */
 #social {
