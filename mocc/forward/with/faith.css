@@ -51,12 +51,12 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
     background: rgb(80, 80, 80);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(40, 40, 40), rgb(120, 120, 120)));
-    background: -webkit-radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
-    background:    -moz-radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
-    background:     -ms-radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
-    background:      -o-radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
-    background:         radial-gradient(rgb(40, 40, 40), rgb(120, 120, 120));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(120, 120, 120), rgb(40, 40, 40)));
+    background: -webkit-radial-gradient(rgb(120, 120, 120), rgb(40, 40, 40));
+    background:    -moz-radial-gradient(rgb(120, 120, 120), rgb(40, 40, 40));
+    background:     -ms-radial-gradient(rgb(120, 120, 120), rgb(40, 40, 40));
+    background:      -o-radial-gradient(rgb(120, 120, 120), rgb(40, 40, 40));
+    background:         radial-gradient(rgb(120, 120, 120), rgb(40, 40, 40));
 }
 
 .clearfix {
