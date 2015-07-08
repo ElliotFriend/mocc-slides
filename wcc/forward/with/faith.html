@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Forward with Faith | David | MO Christian Convention</title>
+        
+        <meta name="description" content="Moving forward with faith means that we trust God and we allow him to use us." />
+        <meta name="author" content="Elliot J. Voris" />
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link href="mocc.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    </head>
+
+    <body>
+        <div class="fallback-message">
+            <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b>, or <b>Firefox</b> browser.</p>
+        </div>
+
+        <div id="impress">
+            <!-- Title Slide -->
+            <div id="faith-title" class="step" data-x="0" data-y="0">
+                <span class="pull-left">David</span>
+                <span class="pull-right">1 Samuel 17</span>
+                <div class="clearfix"><h1>FORWARD with FAITH</h1></div>
+            </div>
+
+            <!-- Slide with "Emmet's Mind" scene from the LEGO Movie -->
+            <div id="video-step" class="step" data-x="850" data-y="-600" data-rotate="90">
+                <video id="emmets-mind" src="emmets-mind.mp4" type="video/webm"></video>
+                <small>Source: <a target="_blank" href="http://www.thelegomovie.com">The LEGO Movie</a> &copy; 2013 Warner Bros. Ent.</small>
+            </div>
+
+            <!-- Proposition slide (main point of the sermon) -->
+            <div id="proposition" class="step" data-x="20" data-y="165" data-z="1000">
+                <span class="pull-left">Moving</span><span class="pull-right">means that we trust God and we allow Him to use us.</span>
+            </div>
+
+            <!-- Map of the battlefield -->
+            <div id="map" class="step" data-x="1600" data-y="0" data-rotate="-45" data-scale="2">
+                <img alt="ElahValley: Valley of Elah battle encampments" src="valley-elah.jpg" />
+                <small>Photo by <a target="_blank" href="http://www.biblewalks.com/sites/ElahValley.html">Bible Walks</a></small>
+            </div>
+
+            <!-- Point 1 - trust God -->
+            <div id="trust-god" class="step" data-x="-750" data-y="500" data-rotate="90">
+                <h2>Trust God</h2>
+            </div>
+
+            <!-- Small things -->
+            <div id="small-things" class="step dew-cups" data-x="-2230" data-y="1000" data-rotate="270">
+                <div class="cup"></div>
+                <div class="dew"></div>
+                <p>small</p>
+            </div>
+
+            <!-- Medium things -->
+            <div id="medium-things" class="step dew-cups" data-x="-2058" data-y="1350" data-rotate="90" data-scale="2">
+                <div class="cup"></div>
+                <div class="dew"></div>
+                <p>Medium</p>
+            </div>
+
+            <!-- Large things -->
+            <div id="large-things" class="step dew-cups" data-x="-1705" data-y="500" data-rotate="90" data-scale="4">
+                <div class="cup"></div>
+                <div class="dew"></div>
+                <p>LARGE</p>
+            </div>
+
+            <!-- Point 2 - allow God to use you -->
+            <div id="allow-use" class="step" data-y="750">
+                <h2>Allow God to Use You</h2>
+            </div>
+
+            <!-- Conclusion -->
+            <div id="stopping" class="step" data-x="900" data-y="625" data-rotate="-135">
+                <h2>What's Stopping You?</h2>
+            </div>
+
+            <!-- Overview slide -->
+            <div id="overview" class="step" data-x="-350" data-y="300" data-scale="4">
+            </div>
+        </div>
+        <div id="social" style="position: top; bottom: 10px; left: 10px; pointer-events: auto;">
+            <span class="pull-left">@ElliotFriend</span>
+            <span class="pull-right">#moccteens</span>
+        </div>
+
+    <!--<div class="hint">
+            <p>Use a spacebar or arrow keys to navigate</p>
+        </div>
+        <script>
+        if ("ontouchstart" in document.documentElement) { 
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+        </script>-->
+
+        <script src="/js/impress.js/js/impress.js"></script>
+        <script>
+            impress().init();
+            var videoStep = document.getElementById("video-step");
+            var video = document.getElementById("emmets-mind");
+            videoStep.addEventListener("impress:stepenter", function() {
+                video.play();
+            }, false);
+            videoStep.addEventListener("impress:stepleave", function() {
+                video.pause();
+            }, false);
+        </script>
+    </body>
+</html>

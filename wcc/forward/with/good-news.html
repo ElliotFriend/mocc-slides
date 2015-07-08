@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>Forward with Good News | Jesus | MO Christian Convention</title>
+        
+        <meta name="description" content="Moving forward with courage means that we take what we have into the world that desperately needs it." />
+        <meta name="author" content="Elliot J. Voris" />
+
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link href="mocc.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="fallback-message">
+            <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b>, or <b>Firefox</b> browser.</p>
+        </div>
+
+        <div id="impress">
+            <!-- Title Slide -->
+            <div id="good-news-title" class="step" data-x="0" data-y="0">
+                <span class="pull-left">Jesus</span>
+                <span class="pull-right">Matthew 4, 28</span>
+                <div class="clearfix"><h1>FORWARD with GOOD NEWS</h1></div>
+            </div>
+
+            <!-- Slide with "Power of the Special" scene from the LEGO Movie -->
+            <div id="video-step" class="step" data-x="1250" data-y="0">
+                <video id="power-special" src="power-special.mp4" type="video/webm"></video>
+                <small>Source: <a target="_blank" href="http://www.thelegomovie.com">The LEGO Movie</a> &copy; 2013 Warner Bros. Ent.</small>
+            </div>
+
+            <!-- Proposition slide (main point of the sermon) -->
+            <div id="proposition" class="step" data-x="100" data-y="320" data-z="1000">
+                <span class="pull-left">Moving</span><span class="pull-right">means that we take what we have into the world that desperately needs it.</span>
+            </div>
+
+            <!-- Point 1 - Jesus calls you -->
+            <div id="calls-you" class="step" data-x="-850" data-y="0" data-rotate="90">
+                <h2>Jesus Calls You</h2>
+            </div>
+
+            <!-- Point 2 - We are called to share our good news -->
+            <div id="good-news" class="step" data-x="-1300" data-y="0" data-rotate="90">
+                <h2>To Share Good News</h2>
+            </div>
+
+            <!-- Point 3 - You are the special -->
+            <div id="you-special" class="step" data-x="-850" data-y="550" data-rotate="180">
+                <h2>You Are The Special</h2>
+            </div>
+
+            <!-- Point 4 - They are the special -->
+            <div id="we-special" class="step" data-x="-850" data-y="1000" data-rotate="180"s>
+                <h2>We All Are The Special</h2>
+            </div>
+
+            <!-- Overview slide -->
+            <div id="overview" class="step" data-x="0" data-y="0" data-scale="4">
+            </div>
+        </div>
+        <div id="social" style="position: fixed; top: 10px; left: 10px; pointer-events: auto;">
+            <span class="pull-left">@ElliotFriend</span>
+            <span class="pull-right">#moccteens</span>
+        </div>
+
+        <script src="/js/impress.js/js/impress.js"></script>
+        <script>
+            impress().init();
+            var videoStep = document.getElementById("video-step");
+            var video = document.getElementById("power-special");
+            videoStep.addEventListener("impress:stepenter", function() {
+                video.play();
+            }, false);
+            videoStep.addEventListener("impress:stepleave", function() {
+                video.pause();
+            }, false);
+        </script>
+    </body>
+</html>
